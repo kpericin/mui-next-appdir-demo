@@ -3,10 +3,11 @@
 //See: https://beta.nextjs.org/docs/rendering/server-and-client-components#third-party-packages
 
 import Button from "@mui/material/Button";
+import styles from "./appButton.module.scss";
 
 export default function MyButton(props: { children: React.ReactNode; }){
 	const { children}= props;
 	return (
-		<Button>{children}</Button>
+		<Button variant="contained" className={styles.root}>{children}</Button>
 	);
 }

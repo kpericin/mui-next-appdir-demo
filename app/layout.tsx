@@ -6,7 +6,7 @@ export default function RootLayout({ children }: { children: React.ReactNode; })
     <html>
       <head></head>
       <body>
-        <NextAppDirEmotionCacheProvider options={{ key: "css" }}>
+        <NextAppDirEmotionCacheProvider options={{ key: "css", prepend: true }}>
           <AppThemeProvider>{children}</AppThemeProvider>
         </NextAppDirEmotionCacheProvider>
       </body>

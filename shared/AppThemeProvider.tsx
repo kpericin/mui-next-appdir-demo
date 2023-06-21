@@ -7,7 +7,7 @@ import { green } from "@mui/material/colors";
 const innerTheme = createTheme({
   palette: {
     primary: {
-      main: green[500],
+      main: green[300],
     },
   },
 });
