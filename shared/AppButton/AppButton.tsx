@@ -5,9 +5,11 @@
 import Button from "@mui/material/Button";
 import styles from "./appButton.module.scss";
 
-export default function MyButton(props: { children: React.ReactNode; }){
-	const { children}= props;
-	return (
-		<Button variant="contained" className={styles.root}>{children}</Button>
-	);
+export default function MyButton(props: { children: React.ReactNode }) {
+  const { children } = props;
+  return (
+    <Button variant="contained" className={styles.root}>
+      {children}
+    </Button>
+  );
 }
